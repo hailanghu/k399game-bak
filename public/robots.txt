@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Admin and API endpoints must not be indexed
+Disallow: /admin
+Disallow: /api/
+
+Sitemap: https://k399game.com/sitemap.xml
