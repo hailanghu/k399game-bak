@@ -13,6 +13,13 @@ out/
 # Build
 dist/
 build/
+tsconfig.tsbuildinfo
+
+# WorkBuddy local memory (not project code)
+.workbuddy/
+
+# One-off D1 backups (contain live data snapshots, not source)
+scripts/*backup*.sql
 
 # Env
 .env

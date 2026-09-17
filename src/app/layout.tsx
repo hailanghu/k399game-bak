@@ -4,7 +4,6 @@ import "./globals.css";
 
 export const runtime = "edge";
 
-// TODO: 替换为你的 AdSense 发布商 ID（在 AdSense 后台「网站 → 获取代码」中查看，格式如 ca-pub-1234567890123456）
 const ADSENSE_PUBLISHER_ID = "ca-pub-8785699959726909";
 
 const inter = Inter({ subsets: ["latin"] });

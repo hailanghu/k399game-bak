@@ -1,9 +1,11 @@
 "use client";
 
-import { useTranslations } from "next-intl";
+import Link from "next/link";
+import { useTranslations, useLocale } from "next-intl";
 
 export default function Footer() {
   const t = useTranslations("footer");
+  const locale = useLocale();
 
   return (
     <footer className="border-t border-dark-800 py-12 px-4 sm:px-6 lg:px-8">
@@ -24,7 +26,15 @@ export default function Footer() {
             {t("tagline")}
           </p>
 
-          <p className="text-dark-600 text-xs">{t("copyright")}</p>
+          <div className="flex items-center gap-4">
+            <Link
+              href={`/${locale}/privacy`}
+              className="text-dark-500 hover:text-white text-xs transition-colors"
+            >
+              {t("privacy")}
+            </Link>
+            <p className="text-dark-600 text-xs">{t("copyright")}</p>
+          </div>
         </div>
       </div>
     </footer>
